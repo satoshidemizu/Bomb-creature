@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+body {
+	margin: 0;
+	padding: 0 3%;
+	height: 90vh;
+	text-size-adjust: none;
+	line-height: 1.5;
+}
+
+p {
+	margin-bottom: 0;
+}
+
+#wrapper {
+	padding-top: 5%;
+	text-align: center;
+	user-select: none;
+	box-sizing: border-box;
+}
+
+h1 {
+	font-size: 18px;
+	text-align: center;
+}
+
+#bomb-wrapper {
+	display: table;
+	width: 100%;
+	text-align: center;
+}
+
+#bomb-wrapper p {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#bomb {
+	cursor: pointer;
+}
+
+#reset {
+	display: none;
+	position: absolute;
+	top: 1.3%;
+	left: 50%;
+	transform: translateY(-50%);
+	margin: 14px auto 0;
+}
