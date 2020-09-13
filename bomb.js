@@ -23,10 +23,14 @@
 			ww  = window.innerWidth,
 			wh  = window.innerHeight;
 		
+		if (this.style.pointerEvents === 'none') {
+			return;
+		}
+		console.log(this.style);
 		if ( bcw > ww * 0.8 || bch > wh * 0.6 ) {
-			this.disabled = false;
 			alert("Stop! the creature is about to expload!!");
 			reset.style.display = 'block';
+			this.style.pointerEvents = 'none';
 			return;
 		}
 
@@ -46,5 +50,6 @@
 
 		bomb.removeAttribute('style');
 		this.style.display = 'none';
+		bomb.style.pointerEvents = 'auto';
 	});
 }
